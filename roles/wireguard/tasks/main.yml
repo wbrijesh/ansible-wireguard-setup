@@ -47,7 +47,7 @@
       "WG_PERSISTENT_KEEPALIVE": "25"
       "WG_ALLOWED_IPS": "{{ wireguard_client_allowed_ips }}"
     ports:
-      - "{{ wireguard_port }}:51820/udp"
+      - "{{ wireguard_port }}:50000/udp"
     volumes:
       - "{{ docker_dir }}/wg-easy:/etc/wireguard"
     restart_policy: unless-stopped
